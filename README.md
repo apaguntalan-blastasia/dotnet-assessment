@@ -1,20 +1,48 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# dotnet-assessment
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+**Background:**
+We are building a product pricing module for sellers.
+For your assessment, we'd like you to develop a rest API and APP using C#.NET and Angular based on the requirements below.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+**Pre-requisites:**
+- IDE which supports .NET 6  (i.e., Visual Studio 2022 Community/Professional/Enterprise Edition)
+- GitHub account
+- NodeJS
+- AngularCLI
+- MS SQL Server
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+**Non-functional requirements:**
+- Using the following technologies / patterns:
+  - .NET 6
+  - EntityFramework code-first
+  - Angular
+  - Repository-Service pattern or CQRS pattern
+  
+**Functional requirements:**
+- Domain Information
+  - Product
+    - Id, Name, Description
+  - Seller
+    - Id, Name
+  - ProductMarketData
+    - About a specific product
+    - Provided by multiple sellers
+    - Can have a multiple prices per day per seller
+- Task:
+  - Add a page to view the list of product (with searching and pagination)
+    - Add the ability to create/update product name and description.
+  - Add a page to view the detail of product including the list of prices of each seller per day.
+    - Add the ability to create/update price for a seller for specific date(add a validation that can only set the price of product per day per seller)
+  - Implement api endpoints for the pages needed
+  - You may add a database seed data for the Sellers, and you can use this when creating product prices.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+**Nice to have:**
+- Build server-side pagination functionality
+- Implement login capability
+- Addition of a secured page (only logged in users can access)
+
+**Setup Instructions:**
+- Since you are seeing this, the assumption is you've managed to access the repository
+- Create a "development" branch and you may use the initial solution web project.
+- Commit whatever you've done regardless if you've completed the requirements or not on or before the deadline.
+
