@@ -2,7 +2,7 @@ namespace DotnetAssessment.WEB
 {
     public class WeatherForecast
     {
-        //Test
+        //Test2
         public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }
